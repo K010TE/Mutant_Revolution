@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dic045wwppjfg"]
+
+[ext_resource type="PackedScene" uid="uid://bovwtkla65bbe" path="res://scenes/tela_01.tscn" id="1_1o8n6"]
+[ext_resource type="PackedScene" uid="uid://br6ukjsea7svu" path="res://scenes/player.tscn" id="2_4f4g3"]
+
+[node name="Game_level" type="Node2D"]
+
+[node name="tela_01" parent="." instance=ExtResource("1_1o8n6")]
+
+[node name="Player" parent="." instance=ExtResource("2_4f4g3")]
+position = Vector2(353, 202)
