@@ -1,0 +1,76 @@
+[gd_scene load_steps=2 format=3 uid="uid://btdxhkkudbv7b"]
+
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_6njwa"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -200.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6njwa")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+offset_right = 1080.0
+offset_bottom = 720.0
+color = Color(0, 0, 0, 1)
+
+[node name="GameName" type="Label" parent="."]
+custom_minimum_size = Vector2(650, 51)
+layout_mode = 0
+offset_left = 216.0
+offset_top = 48.0
+offset_right = 866.0
+offset_bottom = 115.0
+text = "Mutant Revolution"
+horizontal_alignment = 1
+
+[node name="MadeBy" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 457.0
+offset_top = 1.0
+offset_right = 612.0
+offset_bottom = 41.0
+alignment = 1
+
+[node name="PlaceHolder" type="Label" parent="MadeBy"]
+layout_mode = 2
+text = "Feito por"
+
+[node name="Button" type="Button" parent="MadeBy" groups=["button"]]
+layout_mode = 2
+text = "19GAMES"
+
+[node name="Buttons" type="Label" parent="."]
+layout_mode = 0
+offset_top = -31.0
+offset_right = 40.0
+offset_bottom = -8.0
+
+[node name="Play" type="Button" parent="Buttons" groups=["button"]]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 160.0
+offset_right = 704.0
+offset_bottom = 240.0
+text = "Jogar"
+icon_alignment = 1
+
+[node name="Controls" type="Button" parent="Buttons" groups=["button"]]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 250.0
+offset_right = 704.0
+offset_bottom = 330.0
+text = "Controles"
+
+[node name="Quit" type="Button" parent="Buttons" groups=["button"]]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 340.0
+offset_right = 704.0
+offset_bottom = 420.0
+text = "Sair"
